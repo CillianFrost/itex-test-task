@@ -1,0 +1,107 @@
+.slider_wrapper
+  width: 100%
+  height: 550px
+  background: $background-color
+
+.slider
+  +main_size
+  height: inherit
+  overflow: hidden
+  +rt
+
+.slider_offer
+  width: 500px
+  height: 100px
+  +ab
+  +r_edge
+  +fl
+  +jc_b
+  z-index: 2
+
+.slider_offer_text_1
+  +as_c  
+  font-size: 14px
+  height: 80px
+  font-weight: bold 
+  line-height: 26px
+
+.slider_offer_text_first
+  +uppercase
+
+.slider_offer_text_up
+  vertical-align: 10px
+  +uppercase
+
+.slider_offer_text_price
+  color: white
+  font-size: 72px
+  vertical-align: -22px
+
+.slider_offer_text_bold
+  font-size: 22px
+  text-align: right
+  margin-top: 16px
+
+.slider_offer_ratio
+  +c
+  +jc_a
+  +as_s
+  width: 18px
+  height: 90px
+
+.slider_offer_ratio_check
+  +size(18px)
+  background: black
+  cursor: pointer
+
+.slider_images
+  width: 3000px
+  +ab
+  top: 0
+  left: -1000px
+  +fl
+
+.slider_frame
+  background-repeat: no-repeat
+  width: 1000px
+  height: 490px
+
+#slider_frame_1
+  background-image: url(images/slider_image_1.png)
+  background-position: 10% 55%
+  background-size: 75%
+
+#slider_frame_2
+  background-image: url(images/slider_image_2.png)
+  background-position: 0 90%
+  background-size: 70%
+
+#slider_frame_3
+  background-image: url(images/slider_image_3.png)
+  background-position: -30% 60%
+  background-size: 80%
+
+.slider_navigation
+  +size(60px)
+  +rssw
+  overflow: hidden
+
+  +ab
+  bottom: 0
+  left: 440px
+
+.slider_navigation_left
+  +size(30px)
+  background-image: url(images/left-arrow.png)
+  margin-right: 30px
+  cursor: pointer
+
+.slider_navigation_right
+  +size(30px)
+  background-image: url(images/right-arrow.png)  
+  margin-left: 30px
+  cursor: pointer
+
+@media (max-width: 768px)
+  .slider_wrapper
+    +no

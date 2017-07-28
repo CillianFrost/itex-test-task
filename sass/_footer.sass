@@ -1,0 +1,53 @@
+footer
+  width: 100%
+  background-color: black
+  height: 110px
+
+.footer
+  +main_size
+  height: inherit
+  +rsc
+
+.footer_logo
+  font-size: 26px
+  text-transform: uppercase
+  font-weight: bold
+  color: $background-color
+  background-image: url(images/footer-border.png)
+  width: 147px
+  height: 57px
+  margin-right: 80px
+  +rac 
+
+.footer_links
+  line-height: 2.3rem
+  a
+    padding: 20px
+    font-size: 14px
+    color: $action-color
+    &:first-child
+      color: #d3d3d3
+      +rt
+      div
+        +ab
+        left: 0px
+        top: 12px
+        color: $background-color
+    &:hover
+      color: #d3d3d3
+
+.footer_right
+  color: white
+  margin-left: 220px
+
+.footer_rights_down
+  text-align: right
+  a
+    color: white
+    text-decoration: underline
+    vertical-align: 5px
+    &:hover
+      color: shade(white,25%)  
+  span
+    margin-right: 15px
+

@@ -1,0 +1,40 @@
+header
+  width: 100%
+  background: $background-color
+  height: 90px
+
+.header
+  +main_size
+  height: inherit
+  +rbc
+
+.header_left
+  +fl
+  a
+    color: black
+
+.header_left_rent
+  font-size: 26px
+  text-transform: uppercase
+  font-weight: bold
+  margin-right: 10px
+  background-image: url(images/logo-border.png)
+  width: 146px
+  height: 57px
+  +rac
+
+.header_left_text
+  font-size: 14px
+  font-weight: bold
+  width: 200px
+  text-transform: uppercase
+  +rac
+
+.header_right
+  text-align: right
+
+@media (max-width: 768px)
+  .header_left_text
+    +no  
+  .header_right
+    +no  

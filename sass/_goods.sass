@@ -1,0 +1,75 @@
+=goods_check
+  border: 1px $border-color solid
+  border-radius: 2px
+  box-shadow: 0 5px 10px $border-color
+  width: 700px
+  margin-bottom: 5px
+  font-size: 20px
+  font-weight: bold
+  +rbs
+
+=goods_arrow
+  +size(21px)
+  cursor: pointer
+  +as_c
+  margin-right: 15px
+
+@import '_goods_radio.sass'
+@import '_goods_information.sass'
+
+.goods_wrapper
+  width: 100%
+  background: $background-color-2
+
+.goods
+  +main_size
+
+.goods_path
+  height: 100px
+  +rsc
+  margin-bottom: 15px
+  font-size: 14px 
+  a
+    color: #ffb802 
+    &:hover
+      color: shade(#ffb802, 45%)
+
+.goods_path_links a:last-child
+  color: black
+
+.goods_main
+  +fl
+  img
+    width: 295px
+    height: 295px
+    margin-right: 20px 
+    margin-top: 5px 
+
+.goods_main_block_name
+  font-size: 22px
+
+.goods_main_block_price
+  +rbc
+  height: 50px
+  width: 300px
+  button
+    padding: 5px 30px
+    background-color: #fbc001
+    border-radius: 6px
+    +pointer
+
+.goods_main_block_price_this
+  font-size: 22px
+  +bold    
+
+.goods_underline
+  width: 100%
+  height: 2px
+  background: $action-color
+  margin-top: 30px  
+
+.goods_main_block_arrow_up
+  background-image: url(images/up-arrow.png)
+
+.goods_main_block_arrow_down
+  background-image: url(images/down-arrow.png)

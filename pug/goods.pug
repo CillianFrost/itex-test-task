@@ -1,0 +1,19 @@
+.goods_wrapper
+  .goods
+    .goods_path
+      .goods_path_links
+        a(href='index.html') Главная 
+        | / 
+        a(href='#') Каталог 
+        | / 
+        a(href='#') Название товара
+    .goods_main
+      img(src='images/traktor.png')
+      .goods_main_block
+        .goods_main_block_name JCB 4CX Super
+        include goods_radio.pug
+        include goods_information.pug
+        .goods_main_block_price
+          .goods_main_block_price_this 125.000 Р.
+          button Заказать
+    .goods_underline    
